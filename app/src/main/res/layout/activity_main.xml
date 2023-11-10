@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id = "@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <RadioButton
+            android:id ="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/radio_text_celsius_to_farenheit"
+            android:textSize="14sp"
+            android:checked = "true" />
+
+        <RadioButton
+            android:id ="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/radio_text_meters_to_kilometers"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="150dp"
+        android:showDividers="middle"
+        android:divider = "@drawable/empty_tall_driver"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/text_before_converting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/plain_text"
+            android:textSize = "14sp"/>
+
+        <TextView
+                android:id = "@+id/text_after_converting"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view"
+                android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/button_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_convert" />
+
+    </LinearLayout>
+</LinearLayout>
