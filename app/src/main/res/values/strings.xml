@@ -2,7 +2,7 @@
     <string name="app_name">FirstLesson</string>
     <string name="text_view">Результат будет тут</string>
     <string name="button_convert">Конвертировать!</string>
-    <string name="radio_text_celsius_to_farenheit">Цельсия в Фаренгейты</string>
+    <string name="radio_text_celsius_to_fahrenheit">Цельсия в Фаренгейты</string>
     <string name="radio_text_meters_to_kilometers">Метры в километры</string>
     <string name="plain_text">Введите конвертируемую температуру, °С</string>
 </resources>
